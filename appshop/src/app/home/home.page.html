@@ -1,0 +1,138 @@
+<ion-header home-header>
+  <ion-item lines="none" class="search-content">
+    <ion-icon name="search-outline" slot="start" class="search-content_icon-search"></ion-icon>
+    <ion-input placeholder="Rechercher"></ion-input>
+  </ion-item>
+
+  
+  <ion-icon name="cart" class="cart-icon" color="primary"></ion-icon>
+</ion-header>
+
+
+<ion-content class="ion-padding">
+  <ion-grid class="new">
+    <div class="top-container">
+      <h4>Nouveautés</h4>
+      <img src="assets/images/6.png" alt="Nouveautés" class="top-container_img">
+    </div>
+  </ion-grid>
+  <ion-grid class="categories">
+    <swiper-container class="category-swiper" [config]="config" [slidesPerView]="2.3" [spaceBetween]="20">
+      <swiper-slide>
+        <ion-item fill="outline" lines="none" class="ion-no-padding">
+          <ion-icon (click)="goToIphone()" name="call" slot="start" class="man"></ion-icon>
+          <ion-label class="ion-no-margin">
+            <h4>Iphone</h4>
+            <p>6 articles</p>
+          </ion-label>
+        </ion-item>
+      </swiper-slide>
+      <swiper-slide swiperSlide>
+        <ion-item fill="outline" lines="none" class="ion-no-padding">
+          <ion-icon (click)="goToSamsung()" name="call" slot="start" class="woman"></ion-icon>
+          <ion-label class="ion-no-margin">
+            <h4>Samsung</h4>
+            <p>6 articles</p>
+          </ion-label>
+        </ion-item>
+      </swiper-slide>
+      <swiper-slide swiperSlide>
+        <ion-item fill="outline" lines="none" class="ion-no-padding">
+          <ion-icon (click)="goToTecno()" name="call" slot="start" class="child"></ion-icon>
+          <ion-label class="ion-no-margin">
+            <h4>Tecno</h4>
+            <p>6 articles</p>
+          </ion-label>
+        </ion-item>
+      </swiper-slide>
+    </swiper-container>
+  </ion-grid>
+  <!--grid populaires-->
+  <ion-grid>
+    <div class="title-popular">
+      <h4> les plus populaires</h4>
+        <a>Tout voir</a>
+    </div>
+    <swiper-container class="popular-swiper" [config]="configPopular" [slidesPerView]="1.8" [spaceBetween]="10">
+      <swiper-slide swiperSlide>
+        <ion-card class="one-card">
+          <ion-card-header>
+            <img src="assets/images/4.png" alt="">
+          </ion-card-header>
+          <ion-card-content>
+            <div class="content">
+              <ion-label>
+                <h4>Iphone 15 </h4>
+                <p>550.000 FCFA</p>
+              </ion-label>
+              <ion-button>
+                <ion-icon name="cart" class="cart-icon"></ion-icon>
+
+              </ion-button>
+
+            </div>
+
+          </ion-card-content>
+        </ion-card>
+      </swiper-slide>
+      <swiper-slide swiperSlide>
+        <ion-card class="two-card">
+          <ion-card-header>
+            <img src="assets/images/7.png" alt="">
+          </ion-card-header>
+          <ion-card-content>
+            <div class="content">
+              <ion-label>
+                <h4>Samsung A70</h4>
+                <p>150.000 FCFA</p>
+              </ion-label>
+              <ion-button>
+                <ion-icon name="cart"></ion-icon>
+              </ion-button>
+
+            </div>
+          </ion-card-content>
+        </ion-card>
+
+      </swiper-slide>
+      <swiper-slide swiperSlide>
+        <ion-card class="three-card">
+          <ion-card-header>
+            <img src="assets/images/8.png" alt="">
+          </ion-card-header>
+          <ion-card-content>
+          <div class="content">
+            <ion-label>
+              <h4>Tecno Camon 19</h4>
+              <p>218.000 FCFA</p>
+            </ion-label>
+            <ion-button>
+              <ion-icon name="cart"></ion-icon>
+            </ion-button>
+          </div>
+          </ion-card-content>
+        </ion-card>
+
+      </swiper-slide>
+    </swiper-container>
+  </ion-grid>
+  <br>
+    <ion-button (click)="goToCommande()"  shape="round" expand="block">Passer la commande</ion-button>
+  
+  
+
+
+
+
+
+
+  
+</ion-content>
+
+
+
+
+
+
+
+

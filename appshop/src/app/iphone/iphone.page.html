@@ -1,0 +1,140 @@
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    
+    <swiper-container class="popular-swiper" [config]="configPopular" [slidesPerView]="2.2" [spaceBetween]="10">
+      <swiper-slide swiperSlide>
+        <ion-card class="one-card">
+          <ion-card-header>
+            <img src="assets/images/4.png" alt="">
+          </ion-card-header>
+          <ion-card-content>
+            <div class="content">
+              <ion-label>
+                <h4>Iphone 15</h4>
+                <p>550.000 FCFA</p>
+              </ion-label>
+              <ion-button>
+                <ion-icon name="cart"></ion-icon>
+              </ion-button>
+
+            </div>
+
+          </ion-card-content>
+        </ion-card>
+      </swiper-slide>
+      <swiper-slide swiperSlide>
+        <ion-card class="two-card">
+          <ion-card-header>
+            <img src="assets/images/15.png" alt="">
+          </ion-card-header>
+          <ion-card-content>
+            <div class="content">
+              <ion-label>
+                <h4>Iphone 12 pro max</h4>
+                <p>450.000 FCFA</p>
+              </ion-label>
+              <ion-button>
+                <ion-icon name="cart"></ion-icon>
+              </ion-button>
+
+            </div>
+          </ion-card-content>
+        </ion-card>
+
+      </swiper-slide>
+      <swiper-slide swiperSlide>
+        <ion-card class="two-card">
+          <ion-card-header>
+            <img src="assets/images/9.png" alt="">
+          </ion-card-header>
+          <ion-card-content>
+            <div class="content">
+              <ion-label>
+                <h4>Iphone 14</h4>
+                <p>650 000 FCFA</p>
+              </ion-label>
+              <ion-button>
+                <ion-icon name="cart"></ion-icon>
+              </ion-button>
+
+            </div>
+          </ion-card-content>
+        </ion-card>
+
+      </swiper-slide>
+      
+    </swiper-container>
+
+  </ion-grid>
+  <ion-grid>
+    <swiper-container class="popular-swiper" [config]="configPopular" [slidesPerView]="2.2" [spaceBetween]="10">
+      <swiper-slide swiperSlide>
+        <ion-card class="one-card">
+          <ion-card-header>
+            <img src="assets/images/10.png" alt="">
+          </ion-card-header>
+          <ion-card-content>
+            <div class="content">
+              <ion-label>
+                <h4>Iphone 12 pro max </h4>
+                <p>450 000 FCFA</p>
+              </ion-label>
+              <ion-button>
+                <ion-icon name="cart"></ion-icon>
+              </ion-button>
+
+            </div>
+
+          </ion-card-content>
+        </ion-card>
+      </swiper-slide>
+      <swiper-slide swiperSlide>
+        <ion-card class="two-card">
+          <ion-card-header>
+            <img src="assets/images/12.png" alt="">
+          </ion-card-header>
+          <ion-card-content>
+            <div class="content">
+              <ion-label>
+                <h4>Iphone 7</h4>
+                <p>100 000 FCFA</p>
+              </ion-label>
+              <ion-button>
+                <ion-icon name="cart"></ion-icon>
+              </ion-button>
+
+            </div>
+          </ion-card-content>
+        </ion-card>
+
+      </swiper-slide>
+      <swiper-slide swiperSlide>
+        <ion-card class="two-card">
+          <ion-card-header>
+            <img src="assets/images/7.png" alt="">
+          </ion-card-header>
+          <ion-card-content>
+            <div class="content">
+              <ion-label>
+                <h4>Iphone 12</h4>
+                <p>250 000 FCFA</p>
+              </ion-label>
+              <ion-button>
+                <ion-icon name="cart"></ion-icon>
+              </ion-button>
+
+            </div>
+          </ion-card-content>
+        </ion-card>
+
+      </swiper-slide>
+      
+    </swiper-container>
+
+
+  </ion-grid>
+  <br>
+    <ion-button (click)="goToCommande()"  shape="round" expand="block">Passer la commande</ion-button>
+
+</ion-content>

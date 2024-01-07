@@ -1,0 +1,139 @@
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    
+    <swiper-container class="popular-swiper" [config]="configPopular" [slidesPerView]="2.2" [spaceBetween]="10">
+      <swiper-slide swiperSlide>
+        <ion-card class="one-card">
+          <ion-card-header>
+            <img src="assets/images/t1.png" alt="">
+          </ion-card-header>
+          <ion-card-content>
+            <div class="content">
+              <ion-label>
+                <h4>Infinix note 8</h4>
+                <p>117.000 FCFA</p>
+              </ion-label>
+              <ion-button>
+                <ion-icon name="cart"></ion-icon>
+              </ion-button>
+
+            </div>
+
+          </ion-card-content>
+        </ion-card>
+      </swiper-slide>
+      <swiper-slide swiperSlide>
+        <ion-card class="two-card">
+          <ion-card-header>
+            <img src="assets/images/t2.png" alt="">
+          </ion-card-header>
+          <ion-card-content>
+            <div class="content">
+              <ion-label>
+                <h4>Tecno Spark 8 pro</h4>
+                <p>77.000 FCFA</p>
+              </ion-label>
+              <ion-button>
+                <ion-icon name="cart"></ion-icon>
+              </ion-button>
+
+            </div>
+          </ion-card-content>
+        </ion-card>
+
+      </swiper-slide>
+      <swiper-slide swiperSlide>
+        <ion-card class="two-card">
+          <ion-card-header>
+            <img src="assets/images/t3.png" alt="">
+          </ion-card-header>
+          <ion-card-content>
+            <div class="content">
+              <ion-label>
+                <h4>Tecno pop 7</h4>
+                <p>58.000 FCFA</p>
+              </ion-label>
+              <ion-button>
+                <ion-icon name="cart"></ion-icon>
+              </ion-button>
+
+            </div>
+          </ion-card-content>
+        </ion-card>
+
+      </swiper-slide>
+      
+    </swiper-container>
+
+  </ion-grid>
+  <ion-grid>
+    <swiper-container class="popular-swiper" [config]="configPopular" [slidesPerView]="2.2" [spaceBetween]="10">
+      <swiper-slide swiperSlide>
+        <ion-card class="one-card">
+          <ion-card-header>
+            <img src="assets/images/t4.png" alt="">
+          </ion-card-header>
+          <ion-card-content>
+            <div class="content">
+              <ion-label>
+                <h4>Tecno spark 8c</h4>
+                <p>70.000 FCFA</p>
+              </ion-label>
+              <ion-button>
+                <ion-icon name="cart"></ion-icon>
+              </ion-button>
+
+            </div>
+
+          </ion-card-content>
+        </ion-card>
+      </swiper-slide>
+      <swiper-slide swiperSlide>
+        <ion-card class="two-card">
+          <ion-card-header>
+            <img src="assets/images/t5.png" alt="">
+          </ion-card-header>
+          <ion-card-content>
+            <div class="content">
+              <ion-label>
+                <h4>Tecno Camon 17p</h4>
+                <p>148.000 FCFA</p>
+              </ion-label>
+              <ion-button>
+                <ion-icon name="cart"></ion-icon>
+              </ion-button>
+
+            </div>
+          </ion-card-content>
+        </ion-card>
+
+      </swiper-slide>
+      <swiper-slide swiperSlide>
+        <ion-card class="two-card">
+          <ion-card-header>
+            <img src="assets/images/8.png" alt="">
+          </ion-card-header>
+          <ion-card-content>
+            <div class="content">
+              <ion-label>
+                <h4>Tecno camon 19</h4>
+                <p>218.000 FCFA</p>
+              </ion-label>
+              <ion-button>
+                <ion-icon name="cart"></ion-icon>
+              </ion-button>
+
+            </div>
+          </ion-card-content>
+        </ion-card>
+
+      </swiper-slide>
+      
+    </swiper-container>
+
+
+  </ion-grid>
+  <br>
+    <ion-button  (click)="goToCommande()"  shape="round" expand="block">Passer la commande</ion-button>
+</ion-content>

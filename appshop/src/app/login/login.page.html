@@ -1,0 +1,50 @@
+<!-- login.page.html -->
+
+<ion-content>
+  <div class="padding">
+    <div class="logo">
+      <ion-icon color="light" name="sunny"></ion-icon>
+    </div>
+
+    <!-- Utilisez formGroup pour lier le formulaire réactif -->
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+      <ion-item>
+        <ion-label color="light"></ion-label>
+        <ion-icon name="person-outline"></ion-icon>
+        <!-- Utilisez formControlName pour lier chaque contrôle du formulaire réactif -->
+        <ion-input formControlName="username" color="light" placeholder="Prénom" type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label color="light"></ion-label>
+        <ion-icon name="lock-closed-outline"></ion-icon>
+        <!-- Utilisez formControlName pour lier chaque contrôle du formulaire réactif -->
+        <ion-input formControlName="password" color="light" placeholder="Mot de passe" type="password"></ion-input>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-button color="light" fill="clear" slot="end">Mot de passe oublié ?</ion-button>
+      </ion-item>
+
+      <ion-button color="light" fill="outline" shape="round" expand="block" type="submit">Connexion</ion-button>
+      <br>
+      <ion-button (click)="goToInscription()" shape="round" expand="block">Inscription</ion-button>
+
+      <ion-item lines="none">
+        <ion-label class="lay"  color="light">Ou connectez-vous avec</ion-label>
+      </ion-item>
+    </form>
+
+  </div>
+  <div class="flex">
+    <ion-button shape="round">
+      <ion-icon  slot="start" name="logo-facebook"></ion-icon>
+      Facebook
+    </ion-button>
+
+    <ion-button shape="round">
+      <ion-icon  slot="start" name="logo-google"></ion-icon>
+      Google
+    </ion-button>
+  </div>
+</ion-content>

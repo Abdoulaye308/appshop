@@ -1,0 +1,137 @@
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    
+    <swiper-container class="popular-swiper" [config]="configPopular" [slidesPerView]="2.2" [spaceBetween]="10">
+      <swiper-slide swiperSlide>
+        <ion-card class="one-card">
+          <ion-card-header>
+            <img src="assets/images/s5.png" alt="">
+          </ion-card-header>
+          <ion-card-content>
+            <div class="content">
+              <ion-label>
+                <h4>Samsung galaxy s9</h4>
+                <p>180.000 FCFA</p>
+              </ion-label>
+              <ion-button>
+                <ion-icon name="cart"></ion-icon>
+              </ion-button>
+
+            </div>
+
+          </ion-card-content>
+        </ion-card>
+      </swiper-slide>
+      <swiper-slide swiperSlide>
+        <ion-card class="two-card">
+          <ion-card-header>
+            <img src="assets/images/s4.png" alt="">
+          </ion-card-header>
+          <ion-card-content>
+            <div class="content">
+              <ion-label>
+                <h4>galaxy A14 5G</h4>
+                <p>81.000 FCFA</p>
+              </ion-label>
+              <ion-button>
+                <ion-icon name="cart"></ion-icon>
+              </ion-button>
+
+            </div>
+          </ion-card-content>
+        </ion-card>
+
+      </swiper-slide>
+      <swiper-slide swiperSlide>
+        <ion-card class="two-card">
+          <ion-card-header>
+            <img src="assets/images/s6.png" alt="">
+          </ion-card-header>
+          <ion-card-content>
+            <div class="content">
+              <ion-label>
+                <h4>galaxy S7</h4>
+                <p>135.000 FCFA</p>
+              </ion-label>
+              <ion-button>
+                <ion-icon name="cart"></ion-icon>
+              </ion-button>
+
+            </div>
+          </ion-card-content>
+        </ion-card>
+
+      </swiper-slide>
+      
+    </swiper-container>
+
+  </ion-grid>
+  <ion-grid>
+    <swiper-container class="popular-swiper" [config]="configPopular" [slidesPerView]="2.2" [spaceBetween]="10">
+      <swiper-slide swiperSlide>
+        <ion-card class="one-card">
+          <ion-card-header>
+            <img src="assets/images/s2.png" alt="">
+          </ion-card-header>
+          <ion-card-content>
+            <div class="content">
+              <ion-label>
+                <h4>Samsung fold</h4>
+                <p>880.000 FCFA</p>
+              </ion-label>
+              <ion-button>
+                <ion-icon name="cart"></ion-icon>
+              </ion-button>
+
+            </div>
+
+          </ion-card-content>
+        </ion-card>
+      </swiper-slide>
+      <swiper-slide swiperSlide>
+        <ion-card class="two-card">
+          <ion-card-header>
+            <img src="assets/images/7.png" alt="">
+          </ion-card-header>
+          <ion-card-content>
+            <div class="content">
+              <ion-label>
+                <h4>Samsung A70</h4>
+                <p>150.000 FCFA</p>
+              </ion-label>
+              <ion-button>
+                <ion-icon name="cart"></ion-icon>
+              </ion-button>
+
+            </div>
+          </ion-card-content>
+        </ion-card>
+
+      </swiper-slide>
+      <swiper-slide swiperSlide>
+        <ion-card class="two-card">
+          <ion-card-header>
+            <img src="assets/images/7.png" alt="">
+          </ion-card-header>
+          <ion-card-content>
+            <div class="content">
+              <ion-label>
+                <h4>galaxy note 20</h4>
+                <p>380.000 FCFA</p>
+              </ion-label>
+              <ion-button>
+                <ion-icon name="cart"></ion-icon>
+              </ion-button>
+
+            </div>
+          </ion-card-content>
+        </ion-card>
+
+      </swiper-slide>
+      
+    </swiper-container>
+  </ion-grid>
+  <br>
+    <ion-button (click)="goToCommande()"  shape="round" expand="block">Passer la commande</ion-button>
+</ion-content>

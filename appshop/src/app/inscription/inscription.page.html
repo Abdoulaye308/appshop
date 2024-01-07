@@ -1,0 +1,32 @@
+<ion-content>
+  <div class="padding">
+
+    <div class="logo">
+      <ion-icon color="light" name="sunny"></ion-icon>
+    </div>
+
+    <!-- Utilisez [formGroup] pour lier le formulaire réactif -->
+    <form [formGroup]="registerForm">
+
+      <ion-item>
+        <ion-label color="light"></ion-label>
+        <ion-icon name="person-outline"></ion-icon>
+        <!-- Utilisez formControlName pour lier chaque contrôle du formulaire -->
+        <ion-input formControlName="username" color="light" placeholder="Prénom" type="text"></ion-input>
+      </ion-item>
+      
+    
+      <ion-item>
+        <ion-label color="light"></ion-label>
+        <ion-icon name="lock-closed-outline"></ion-icon>
+        <!-- Utilisez formControlName pour lier chaque contrôle du formulaire -->
+        <ion-input formControlName="password" color="light" placeholder="Mot de passe" type="password"></ion-input>
+      </ion-item>
+
+      <br>
+      <!-- Utilisez [disabled] pour désactiver le bouton si le formulaire n'est pas valide -->
+      <ion-button [disabled]="!registerForm.valid" shape="round" expand="block" (click)="register()">Inscription</ion-button>
+
+    </form>
+  </div>
+</ion-content>

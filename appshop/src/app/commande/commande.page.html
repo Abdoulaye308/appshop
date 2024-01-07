@@ -1,0 +1,40 @@
+
+
+<ion-content [fullscreen]="true">
+
+  <div class="padding">
+
+    <div class="logo">
+      <ion-icon color="light" name="sunny"></ion-icon>
+    </div>
+  <ion-item>
+    <ion-label color="light"></ion-label>
+    <ion-icon name="person-outline"></ion-icon>
+    <ion-input [(ngModel)]="prenom" color="light" placeholder="Prenom" type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label color="light"></ion-label>
+    <ion-icon name="person"></ion-icon>
+    <ion-input [(ngModel)]="nom"  color="light" placeholder="nom" type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label color="light"></ion-label>
+    <ion-icon name="cart"></ion-icon>
+    <ion-input [(ngModel)]="produits"  color="light" placeholder="Produit(s)" type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label color="light"></ion-label>
+    <ion-icon name="call"></ion-icon>
+    <ion-input [(ngModel)]="number" color="light" placeholder="Numéro de téléphone" type="number"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label color="light"></ion-label>
+    <ion-icon name="location-outline"></ion-icon>
+    <ion-input [(ngModel)]="adresse" color="light" placeholder="Adresse pour la livraison" type="text"></ion-input>
+  </ion-item>
+  <br>
+    <ion-button color="light"  shape="round" expand="block" (click)="commande()">Commander</ion-button>
+
+  
+  </div>
+</ion-content>
