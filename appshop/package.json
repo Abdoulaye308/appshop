@@ -1,3 +1,4 @@
+
 {
   "name": "appshop",
   "version": "0.0.1",
@@ -21,9 +22,10 @@
     "@angular/platform-browser": "^17.0.2",
     "@angular/platform-browser-dynamic": "^17.0.2",
     "@angular/router": "^17.0.2",
+    "@awesome-cordova-plugins/sqlite": "^6.6.0",
     "@capacitor/android": "^5.6.0",
     "@capacitor/app": "5.0.6",
-    "@capacitor/core": "^5.5.1",
+    "@capacitor/core": "^5.6.0",
     "@capacitor/haptics": "5.0.6",
     "@capacitor/keyboard": "5.0.6",
     "@capacitor/status-bar": "5.0.6",
@@ -31,6 +33,7 @@
     "@ionic/vue": "^7.6.0",
     "@ionic/vue-router": "^7.6.0",
     "body-parser": "^1.20.2",
+    "cordova-sqlite-storage": "^6.1.0",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
@@ -51,7 +54,7 @@
     "@angular/cli": "^17.0.0",
     "@angular/compiler-cli": "^17.0.2",
     "@angular/language-service": "^17.0.2",
-    "@capacitor/cli": "^5.5.1",
+    "@capacitor/cli": "^5.6.0",
     "@ionic/angular-toolkit": "^9.0.0",
     "@types/jasmine": "~5.1.0",
     "@typescript-eslint/eslint-plugin": "^6.0.0",

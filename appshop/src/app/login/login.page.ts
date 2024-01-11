@@ -27,6 +27,7 @@ export class LoginPage implements OnInit {
       password: ['', [Validators.required, Validators.minLength(6)]],
     });
   }
+  
 
   goToInscription() {
     this.navCtrl.navigateForward("/inscription");
